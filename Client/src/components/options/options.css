@@ -1,0 +1,36 @@
+
+
+.options-container {
+    height: 2rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid green;
+    background-color: #208d5729;
+  }
+  
+  .options-button {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-family: poppins;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.527);
+      border-radius: 1rem;
+      padding: 3px 15px;
+      background-color: #208d57;
+  }
+  
+  .options-button:hover {
+    background-color: rgb(78, 222, 78);
+    border: 2px solid rgba(255, 255, 255, 0.888);
+  }
+  
+  .options-button:active {
+    border: 2px solid rgba(255, 255, 255, 0.888);
+    background-color: rgb(78, 222, 78);
+  }
+  

@@ -1,0 +1,13 @@
+.home-container{
+    border: 1px solid red;
+    height: 100vh;
+}
+.news-section{
+    border: 1px solid blueviolet;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
