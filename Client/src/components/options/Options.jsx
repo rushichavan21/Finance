@@ -4,7 +4,7 @@ import "./options.css";
 
 const Options = () => {
   const navigate = useNavigate();
-  const options = ["Home", "Watchlist", "Portfolio", "News", "Tracker", "Crypto", "Roadmap"];
+  const options = ["Home", "Watchlist", "Portfolio", "Tracker", "News", "Crypto", "Roadmap"];
   const [active, setActive] = useState("Home"); 
 
   return (
