@@ -18,6 +18,34 @@
 }
 
 
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(21, 127, 78, 0.616); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  rgba(21, 127, 78, 0.616); 
+}
+
+/* Works for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color :rgba(21, 127, 78, 0.616) #000000;
+}
+
+
+
+
 /* 2xl */
 @media (max-width: 1536px) {
   .container {
