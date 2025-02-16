@@ -12,11 +12,11 @@ const Navbar = () => {
           <div className="navbar-title">Finance</div>
         </div>
         <div className="navbar-options">
-          <button className="round-buttons ">
+          <button className="round-buttons" onClick={()=>{navigate("/login")}}>
             <LogIn size={20} />
             <span>Login</span>
           </button>
-          <button className="round-buttons ">
+          <button className="round-buttons" onClick={()=>{navigate("/signup")}}>
             <UserPlus size={20} />
             <span>Signup</span>
           </button>
