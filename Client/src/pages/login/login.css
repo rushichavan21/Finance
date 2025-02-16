@@ -19,13 +19,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(26, 26, 26, 0.8); /* This creates the opacity effect */
+  background-color: rgba(26, 26, 26, 0.8); 
   z-index: 1;
 }
 
 .login-wrapper {
   position: relative;
-  z-index: 2; /* This ensures the wrapper appears above the overlay */
+  z-index: 2; 
   display: flex;
   width: 90%;
   max-width: 1200px;
@@ -233,7 +233,7 @@
   background: rgba(21, 127, 78, 0.8);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.1rem 0.1rem;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -241,6 +241,7 @@
   gap: 0.5rem;
   font-size: 1rem;
   transition: background-color 0.3s;
+  font-family: poppins;
 }
 
 .back-to-home:hover {
