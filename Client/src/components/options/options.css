@@ -2,7 +2,7 @@
   height: 2rem;
   display: flex;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
   border-bottom: 1px solid rgb(0, 0, 0);
   background-color: #208d5729;
@@ -11,14 +11,13 @@
 .options-button {
   display: flex;
   align-items: center;
-  padding: 5px;
   font-family: poppins;
   font-weight: 500;
   font-size: 1.2rem;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.826);
-  border-radius: 1rem;
-  padding: 3px 15px;
+  border-radius: 0.5rem;
+  padding: 15px 80px;
   background-color: #208d57;
   color: white;
   cursor: pointer;

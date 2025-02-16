@@ -1,12 +1,11 @@
 .navbar-container{
 padding: 5px;
-height: 2rem;
-background-color: rgba(21, 127, 78, 0.616);
+height: 2.8rem;
+background-color: rgba(14, 183, 104, 0.857);
 display: flex;
 align-items: center;
 justify-content: space-between;
 font-size: 2rem;
-
 }
 .navbar-options{
     display: flex;
