@@ -5,7 +5,7 @@ const Home = () => {
     <div className="news-section">
         latest News
     </div>
-    .
+    
      </div>
   )
 }

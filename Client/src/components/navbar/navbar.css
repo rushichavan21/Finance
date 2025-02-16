@@ -13,6 +13,7 @@ font-size: 2rem;
 }
 .navbar-logo-div{
     display: flex;
+    cursor: pointer;
 }
 .navbar-logo{
     width: 45px;

@@ -1,11 +1,13 @@
 import { LogIn, UserPlus } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="navbar-container">
-        <div className="navbar-logo-div">
+        <div className="navbar-logo-div" onClick={()=>{navigate("/home")}}>
           <img src="./fin-logo.svg" className="navbar-logo" alt="logo" />
           <div className="navbar-title">Finance</div>
         </div>
