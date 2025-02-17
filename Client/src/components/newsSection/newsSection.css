@@ -1,0 +1,11 @@
+.newsSection-container{
+    border: 1px solid blueviolet;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
