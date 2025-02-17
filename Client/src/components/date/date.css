@@ -1,0 +1,12 @@
+.day-date{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+.day-date span{
+    height: 25px;
+    margin-right: 10px;
+}

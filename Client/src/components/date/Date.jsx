@@ -1,3 +1,5 @@
+import { Calendar } from "lucide-react";
+import "./date.css"
 const DateComp= () => {
     const today = new Date().toLocaleDateString("en-IN", {
       weekday: "long",
@@ -6,7 +8,7 @@ const DateComp= () => {
       year: "numeric",
     });
   
-    return <div>{today}</div>;
+    return <div className="day-date"><span><Calendar/></span> {today}</div>;
   };
   
   export default DateComp;
