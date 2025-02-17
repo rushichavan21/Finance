@@ -1,0 +1,42 @@
+.commodities-container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 2px solid red;
+}
+.commodities-title{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   color: greenyellow;
+ 
+}
+.metals-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 1rem;
+}
+.metal-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.brent-intro{
+    text-align: center;
+    padding: 20px;
+    color: greenyellow;
+}
+.brent-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.brentDiv{
+    border: 1px solid white;
+    padding: 1rem;
+    width: 100px;
+}
