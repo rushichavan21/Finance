@@ -1,10 +1,48 @@
 .calculator-container {
-    padding: 2rem;
-    color: white;
-    background-color: #1a1a1a;
-    min-height: 100vh;
-    background-image: url('/home-bg.svg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, auto); 
+  gap: 1rem;
+  padding: 2rem;
+  color: white;
+  background-color: #208d575e;
+  min-height: 100vh;
+  background-image: url('/home-bg.svg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.income-expenses-section {
+  grid-column: span 2;
+  grid-row: span 2;
+  
+}
+
+
+.financial-targets-section {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+
+.insights-section {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+
+.projection-section {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.income-expenses-section,
+.financial-targets-section,
+.insights-section,
+.projection-section {
+  background-color: #208d5725;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
