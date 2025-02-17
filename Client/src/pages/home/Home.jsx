@@ -1,4 +1,5 @@
 
+import Commodities from "../../components/commodities/Commodities";
 import CurrencyChart from "../../components/currencyChart/CurrencyChart";
 import NewsSection from "../../components/newsSection/newsSection";
 import "./home.css";
@@ -27,7 +28,7 @@ const Home = () => {
             </div>
           </div>
           <div className="commodity-section">
-            current gold price , current silver price and other commodity prices
+            <Commodities/>
           </div>
           </div>
         </div>
