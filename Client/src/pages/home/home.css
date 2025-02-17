@@ -44,27 +44,6 @@
     z-index: 2;
 }
 
-.news-section{
-    border: 1px solid blueviolet;
-    height: 100vh;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-align: center;
-}
-.day-date{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid gray;
-    box-sizing: border-box;
-}
-.day-date span{
-    height: 25px;
-    margin-right: 10px;
-}
 .home-right-section{
     border: 1px solid blue;
     flex: 1;
