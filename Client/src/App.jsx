@@ -7,6 +7,7 @@ import Login from './pages/login/login'
 import Signup from './pages/signup/signup'
 import Footer from './components/footer/Footer'
 import RoadmapLanding from './components/roadmap/RoadmapLanding'
+import Calculator from './components/calculator/Calculator'
 const App = () => {
   const location = useLocation();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
@@ -31,6 +32,7 @@ const App = () => {
           <Route path='/roadmap' element={<RoadmapLanding/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
+          <Route path='/calculator' element={<Calculator/>}/>
         </Routes>
       </div>
       {!isAuthPage && <Footer />}

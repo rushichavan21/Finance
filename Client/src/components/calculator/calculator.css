@@ -1,0 +1,10 @@
+.calculator-container {
+    padding: 2rem;
+    color: white;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    background-image: url('/home-bg.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }

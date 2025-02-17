@@ -1,7 +1,9 @@
 import { Calculator, Target, TrendingUp, Wallet } from "lucide-react";
 import "./roadmapLanding.css";
+import { useNavigate } from "react-router-dom";
 
 const RoadmapLanding = () => {
+  const navigate = useNavigate();
   return (
     <div className="roadmap-container">
       <div className="roadmap-hero">
@@ -20,7 +22,7 @@ const RoadmapLanding = () => {
 
         <div className="feature-card">
           <div className="feature-icon">
-            <Target size={32} />
+          <Target size={32} />
           </div>
           <h3>Goal Setting</h3>
           <p>Set financial targets and get a clear roadmap to achieve them</p>
@@ -46,7 +48,7 @@ const RoadmapLanding = () => {
       <div className="roadmap-cta">
         <h2>Ready to Start Your Journey?</h2>
         <p>Use our calculator to see what you can afford</p>
-        <button className="start-button">Start Planning</button>
+        <button className="start-button" onClick={()=>{navigate("/calculator")}}>Start Planning</button>
       </div>
 
       <div className="how-it-works">
