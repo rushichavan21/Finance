@@ -10,12 +10,12 @@ const IndexCard = ({ name, value, change, percentage, trend }) => {
       <div className="index-details">
         <div className="index-value">{value}</div>
         <div className={`index-change ${isUp ? "up" : "down"}`}>
-          {change} {isUp ? <ArrowUp/> : <ArrowDown />}
-        </div>
+          {change} {isUp ? <span ><ArrowUp/></span>  :<span><ArrowDown/></span>}
       </div>
       <div className={`index-percentage ${isUp ? "up" : "down"}`}>
         {percentage}%
       </div>
+        </div>
     </div>
   );
 };

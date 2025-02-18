@@ -1,0 +1,46 @@
+.aboutus-wrapper {
+    height: 175px;
+    width: 175px;
+    border: 2px solid rgba(128, 128, 128, 0.616);
+    border-right: 0px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    padding: 10px;
+    border-top-left-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    background-color: rgba(48, 35, 35, 0.316);
+}
+.aboutus-title{
+
+/* border: 1px solid gray; */
+padding:3px;
+border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0%;
+    width: 100px;
+    margin-top: 2rem; 
+}
+
+.aboutus-btn {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-10%);
+    padding: 10px 15px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5%) scale(1.1);
+}

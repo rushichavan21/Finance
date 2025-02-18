@@ -1,4 +1,5 @@
 
+import Aboutus from "../../components/aboutUs/Aboutus";
 import Commodities from "../../components/commodities/Commodities";
 import CurrencyChart from "../../components/currencyChart/CurrencyChart";
 import IndicesData from "../../components/indices/indicesData";
@@ -22,9 +23,14 @@ const Home = () => {
             </div>
           </div>
           <div className="compartment-home">
+            <div className="compartment-hori">
           <div className="commodity-section">
             <Commodities/>
           </div>
+          <div className="home-aboutus">
+            <Aboutus/>
+          </div>
+            </div>
           <div className="quote-section">
           <Quote/>  
           </div>
