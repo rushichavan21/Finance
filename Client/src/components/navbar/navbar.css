@@ -8,6 +8,9 @@ justify-content: space-between;
 font-size: 2rem;
 max-width:100%;
 }
+.navbar-title{
+    color: white;
+}
 .navbar-options{
     display: flex;
 }
