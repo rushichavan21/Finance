@@ -9,12 +9,19 @@
     padding: 10px;
     border-top-left-radius: 6rem;
     border-bottom-left-radius: 6rem;
-    background-color: rgba(48, 35, 35, 0.316);
+    background-color: rgba(0, 0, 0, 0.718);
+    background-image: url(./bse.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light; 
 }
+
 .aboutus-title{
 
 /* border: 1px solid gray; */
 padding:3px;
+font-weight: 500;
 border-radius: 10px;
     position: absolute;
     right: 0px;
