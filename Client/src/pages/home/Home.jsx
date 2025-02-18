@@ -1,6 +1,7 @@
 
 import Commodities from "../../components/commodities/Commodities";
 import CurrencyChart from "../../components/currencyChart/CurrencyChart";
+import IndicesData from "../../components/indices/indicesData";
 import NewsSection from "../../components/newsSection/newsSection";
 import "./home.css";
 const Home = () => {
@@ -10,15 +11,7 @@ const Home = () => {
        <NewsSection/>
         <div className="home-right-section">
           <div className="index-insights">
-            <div className="home-nifty-insights">
-              NSE , previous close : , today's open : , today's high : , today's low : , today's volume : 
-            </div>
-            <div className="home-sensex-insights">
-              BSE , previous close : , today's open : , today's high : , today's low : , today's volume : 
-            </div>
-          </div>
-          <div className="home-heavy-volume-stocks">
-            stocks with heavy volume+52W high stocks+52W low stocks
+            <IndicesData/>
           </div>
           <div className="currency-commodity-section">
           <div className="rupee-vs-dollor-div">
