@@ -1,0 +1,197 @@
+{
+    "quotes": [
+      {
+        "name": "Warren Buffett",
+        "quote": "Risk comes from not knowing what you're doing."
+      },
+      {
+        "name": "Charlie Munger",
+        "quote": "The big money is not in the buying or selling, but in the waiting."
+      },
+      {
+        "name": "Benjamin Graham",
+        "quote": "The investor’s chief problem—and even his worst enemy—is likely to be himself."
+      },
+      {
+        "name": "Peter Lynch",
+        "quote": "Know what you own, and know why you own it."
+      },
+      {
+        "name": "John Bogle",
+        "quote": "Time is your friend, impulse is your enemy."
+      },
+      {
+        "name": "Ray Dalio",
+        "quote": "He who lives by the crystal ball will eat shattered glass."
+      },
+      {
+        "name": "Philip Fisher",
+        "quote": "The stock market is filled with individuals who know the price of everything, but the value of nothing."
+      },
+      {
+        "name": "Jesse Livermore",
+        "quote": "The stock market is never obvious. It is designed to fool most of the people, most of the time."
+      },
+      {
+        "name": "Howard Marks",
+        "quote": "You can’t predict, but you can prepare."
+      },
+      {
+        "name": "George Soros",
+        "quote": "It’s not whether you’re right or wrong, but how much money you make when you’re right and how much you lose when you’re wrong."
+      },
+      {
+        "name": "Paul Tudor Jones",
+        "quote": "Losers average losers."
+      },
+      {
+        "name": "Carl Icahn",
+        "quote": "In risk there is reward."
+      },
+      {
+        "name": "Seth Klarman",
+        "quote": "The single greatest edge an investor can have is a long-term orientation."
+      },
+      {
+        "name": "Mohnish Pabrai",
+        "quote": "Heads, I win; tails, I don’t lose much."
+      },
+      {
+        "name": "John Templeton",
+        "quote": "Bull markets are born on pessimism, grow on skepticism, mature on optimism, and die on euphoria."
+      },
+      {
+        "name": "Joel Greenblatt",
+        "quote": "If you don’t feel comfortable owning a stock for 10 years, you shouldn’t own it for 10 minutes."
+      },
+      {
+        "name": "David Einhorn",
+        "quote": "No matter how much research you do, you're never certain."
+      },
+      {
+        "name": "Irving Kahn",
+        "quote": "Patience is the key to successful investing."
+      },
+      {
+        "name": "Bill Ackman",
+        "quote": "If you can be right 60% of the time, you will be a hero on Wall Street."
+      },
+      {
+        "name": "James Simons",
+        "quote": "Past performance is the best predictor of success."
+      },
+      {
+        "name": "Peter Thiel",
+        "quote": "Brilliant thinking is rare, but courage is in even shorter supply than genius."
+      },
+      {
+        "name": "Nick Sleep",
+        "quote": "The longest distance in investing is the journey from the head to the heart."
+      },
+      {
+        "name": "Michael Burry",
+        "quote": "The best investments are often those that make you feel most uncomfortable at the time you make them."
+      },
+      {
+        "name": "Ken Fisher",
+        "quote": "The stock market is the story of cycles and of the human behavior that is responsible for overreactions in both directions."
+      },
+      {
+        "name": "Jim Rogers",
+        "quote": "The way to get rich is to find what is of value and underappreciated."
+      },
+      {
+        "name": "Ed Seykota",
+        "quote": "Win or lose, everybody gets what they want from the market."
+      },
+      {
+        "name": "Stanley Druckenmiller",
+        "quote": "The best economist I know is the stock market."
+      },
+      {
+        "name": "Bill Miller",
+        "quote": "The market does not trade based on reality. It trades based on perception."
+      },
+      {
+        "name": "Whitney Tilson",
+        "quote": "Investing is not about beating others at their game. It’s about controlling yourself at your own game."
+      },
+      {
+        "name": "T. Boone Pickens",
+        "quote": "The biggest risk is not taking a risk."
+      },
+      {
+        "name": "David Tepper",
+        "quote": "There's a time to make money and a time to not lose money."
+      },
+      {
+        "name": "Andrew Carnegie",
+        "quote": "The wise young man or wage earner of today invests his money in real estate."
+      },
+      {
+        "name": "Walter Schloss",
+        "quote": "Fear and greed are probably the worst emotions to have in connection with the purchase and sale of stocks."
+      },
+      {
+        "name": "Bruce Greenwald",
+        "quote": "The key to investing is to understand the competition."
+      },
+      {
+        "name": "Thomas Rowe Price Jr.",
+        "quote": "Change is the investor’s only certainty."
+      },
+      {
+        "name": "Robert Kiyosaki",
+        "quote": "The poor and middle-class work for money. The rich have money work for them."
+      },
+      {
+        "name": "Charlie D. Ellis",
+        "quote": "In investing, the biggest problem is that the winners own more of the market than the losers."
+      },
+      {
+        "name": "Jean-Marie Eveillard",
+        "quote": "The value of patience and discipline cannot be overstated."
+      },
+      {
+        "name": "Rakesh Jhunjhunwala",
+        "quote": "Never invest at unreasonable valuations. Never run for companies which are in limelight."
+      },
+      {
+        "name": "Vijay Kedia",
+        "quote": "Investing is like yoga. Body, mind, and soul have to be aligned."
+      },
+      {
+        "name": "Raamdeo Agrawal",
+        "quote": "Wealth is created by holding quality stocks for a long time."
+      },
+      {
+        "name": "Naval Ravikant",
+        "quote": "Play long-term games with long-term people."
+      },
+      {
+        "name": "Aswath Damodaran",
+        "quote": "The value of an asset is what someone else is willing to pay for it."
+      },
+      {
+        "name": "Chris Davis",
+        "quote": "It's the temperament, not the intellect, that makes you a great investor."
+      },
+      {
+        "name": "Guy Spier",
+        "quote": "Avoid situations where you are prone to making irrational decisions."
+      },
+      {
+        "name": "Michael Steinhardt",
+        "quote": "The hardest thing to judge is what level of risk is safe."
+      },
+      {
+        "name": "Chuck Akre",
+        "quote": "Great companies are like great wine; they get better with age."
+      },
+      {
+        "name": "Marty Whitman",
+        "quote": "A great company is one that can compound its intrinsic value per share over time."
+      }
+    ]
+  }
+  

@@ -1,0 +1,18 @@
+.quote-wrapper{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    border: 2px solid rgba(128, 128, 128, 0.604);
+    border-radius: 1rem;
+}
+.quote-quote{
+    background-color: black;
+}
+.quote-author{
+    padding: 2px;
+    border: 1px solid grey;
+    border-radius:10px;
+    width: 30%;
+    margin-top: 1rem;
+    text-align: center;
+}
