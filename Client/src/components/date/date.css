@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid gray;
     box-sizing: border-box;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.345);
+    border-radius: 1rem;
 }
 .day-date span{
     height: 25px;

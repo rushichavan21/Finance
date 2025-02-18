@@ -1,24 +1,28 @@
 .newsCard-wrapper{
-    background-color: black;
-    width: 100%;
+    width: 90%;
     height:auto;
-    border: 1px solid white;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.552);
+    background-color: rgba(48, 35, 35, 0.567);
 }
 .newsCard-title{
     text-align: start;
+    color: greenyellow;
     padding: 10px;
+    border-radius: 10px;
 }
 .newsCard-description{
     text-align: start;
     padding: 10px;
-    color: greenyellow;
-    border-top: 1px solid wheat;
 }
 .newsCard-date-source{
     display: flex;
     align-items:center;
     justify-content: space-around;
     padding: 5px;
-    border-top: 1px solid wheat;
     font-size: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.499);
+    border-radius: 1rem;
 }
