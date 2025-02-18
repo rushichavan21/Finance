@@ -1,8 +1,35 @@
 .indexCard-wrapper{
     height: 50%;
-    background:black;
-    border: 1px solid gray;
-    border-radius: 1rem;
-  
+    background-color: rgba(35, 25, 25, 0.567);
+    border: 1px solid rgba(128, 128, 128, 0.627);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.index-name{
+    font-weight: 600;
+}
 
+.index-change{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+} 
+ .index-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    padding: 5px;
+ }
+.up {
+    color: rgba(0, 128, 0, 0.826);
+}
+
+.down {
+    color: rgba(255, 0, 0, 0.738);
 }
