@@ -9,7 +9,7 @@ const CurrencyChart = () => {
     script.onload = () => {
       new window.TradingView.widget({
         width: "100%",
-        height: 500,
+        height: 400,
         symbol: "FX_IDC:USDINR",
         interval: "D",
         timezone: "Etc/UTC",
