@@ -48,5 +48,75 @@ async function scrapeNSEData() {
     throw error;
   }
 }
+async function scrapeCommodityPrices() {
+  const headers = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Accept-Language': 'en-US,en;q=0.5'
+  };
 
-module.exports = { scrapeNSEData };
+  const commodities = [
+      {
+          url: 'https://economictimes.indiatimes.com/commoditysummary/symbol-GOLD.cms',
+          name: 'GOLD'
+      },
+      {
+          url: 'https://economictimes.indiatimes.com/commoditysummary/symbol-SILVER.cms',
+          name: 'SILVER'
+      },
+      {
+          url: 'https://economictimes.indiatimes.com/commoditysummary/symbol-CRUDEOIL.cms',
+          name: 'CRUDEOIL'
+      }
+  ];
+
+  try {
+      const results = await Promise.all(
+          commodities.map(async (commodity) => {
+              try {
+                  const response = await axios.get(commodity.url, { headers });
+                  const $ = cheerio.load(response.data);
+                  
+                  const price = $('.commodityPrice').text().trim();
+                  const unit = $('.text').text().trim();
+                  const datetime = $('.datetime').text().trim();
+
+                  return {
+                      name: commodity.name,
+                      success: true,
+                      data: {
+                          price: parseFloat(price.replace(/,/g, '')) || price,
+                          unit: unit,
+                          timestamp: datetime,
+                          raw_price: price
+                      }
+                  };
+              } catch (error) {
+                  return {
+                      name: commodity.name,
+                      success: false,
+                      error: `Failed to fetch ${commodity.name}: ${error.message}`
+                  };
+              }
+          })
+      );
+
+
+      const commodityData = results.reduce((acc, curr) => {
+          acc[curr.name.toLowerCase()] = curr.success ? curr.data : { error: curr.error };
+          return acc;
+      }, {});
+
+      return {
+          gold: commodityData.gold,
+          silver: commodityData.silver,
+          crudeoil: commodityData.crudeoil,
+          lastUpdated: new Date().toISOString()
+      };
+
+  } catch (error) {
+      throw new Error(`Failed to fetch commodity prices: ${error.message}`);
+  }
+}
+
+module.exports = { scrapeNSEData,scrapeCommodityPrices};
