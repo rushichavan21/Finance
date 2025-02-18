@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./newsSection.css";
 import Date from "../date/Date";
 import NewsCard from "../newsCard/NewsCard";
@@ -7,6 +7,7 @@ const NewsSection = () => {
   const [newsData, setNewsData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [time, setTime] = useState(60);
+  const scrollRef = useRef(null);
 
   const fetchNews = () => {
     setLoading(true);
@@ -14,7 +15,7 @@ const NewsSection = () => {
       .then((response) => response.json())
       .then((data) => {
         const shuffled = data.sort(() => 0.5 - Math.random());
-        setNewsData(shuffled.slice(0, 4));
+        setNewsData(shuffled.slice(0, 10));
       })
       .catch((error) => console.error("Error fetching news:", error))
       .finally(() => {
@@ -38,11 +39,21 @@ const NewsSection = () => {
     };
   }, []);
 
+  // Auto-scroll effect
+  useEffect(() => {
+    const scroll = () => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({ top: 1, behavior: "smooth" });
+      }
+    };
+    const interval = setInterval(scroll, 50);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="newsSection-container">
       <Date />
-      <div className="newsSection-title">Latest News: refresh in {time}s</div>
-      <div className="newsData">
+      <div className="newsData" ref={scrollRef}>
         {loading ? (
           <div className="loading">Loading...</div>
         ) : (
