@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
-
+import axios from 'axios'
 const Signup = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -11,17 +11,22 @@ const Signup = () => {
     password: '',
     confirmPassword: ''
   });
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [password, setPassword] = useState();
+  const [email, setEmail] = useState();
+  const [confirmPassword, setConfirmPassword] = useState();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle signup logic here
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  
+    try {
+      const response = await axios.post("http://localhost:3000/signup", {firstName,lastName,password,email,confirmPassword});
+      console.log("Signup successful:", response.data);
+      navigate('/login'); 
+    } catch (error) {
+      console.error("Signup failed:", error.response ? error.response.data : error.message);
+    }
   };
 
   return (
@@ -50,8 +55,7 @@ const Signup = () => {
                     type="text"
                     id="firstName"
                     name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
+                    onChange={(e)=> setFirstName(e.target.value)}
                     placeholder="Enter first name"
                     required
                   />
@@ -63,8 +67,7 @@ const Signup = () => {
                     type="text"
                     id="lastName"
                     name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
+                    onChange={(e)=> setLastName(e.target.value)}
                     placeholder="Enter last name"
                     required
                   />
@@ -77,8 +80,7 @@ const Signup = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  onChange={(e)=> setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
                 />
@@ -90,8 +92,7 @@ const Signup = () => {
                   type="password"
                   id="password"
                   name="password"
-                  value={formData.password}
-                  onChange={handleChange}
+                  onChange={(e)=> setPassword(e.target.value)}
                   placeholder="Create password"
                   required
                 />
@@ -103,8 +104,7 @@ const Signup = () => {
                   type="password"
                   id="confirmPassword"
                   name="confirmPassword"
-                  value={formData.confirmPassword}
-                  onChange={handleChange}
+                  onChange={(e)=> setConfirmPassword(e.target.value)}
                   placeholder="Confirm password"
                   required
                 />
