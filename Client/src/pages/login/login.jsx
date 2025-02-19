@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './login.css';
+import axios from 'axios';
 
 const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
+  const [email, setEmail] = useState(""); 
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");  
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here
-  };
+    setError(""); 
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    try {
+      const response = await axios.post("http://localhost:3000/login", { email, password });
+
+      if (response.data.success) {  
+        console.log("Login Successful ✅", response.data);
+        navigate("/"); 
+      } else {
+        setError(response.data.message || "Invalid credentials ❌");
+      }
+    } catch (err) {
+      console.error("Login Error ❌", err);
+      setError("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -38,7 +45,10 @@ const Login = () => {
           <div className="login-form-container">
             <h1>Login</h1>
             <p className="login-subtitle">Enter your credentials to access your account</p>
-            
+
+           
+            {error && <p className="error-message">{error}</p>}
+
             <form onSubmit={handleSubmit} className="login-form">
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
@@ -46,8 +56,8 @@ const Login = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  value={email} 
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
                 />
@@ -59,8 +69,8 @@ const Login = () => {
                   type="password"
                   id="password"
                   name="password"
-                  value={formData.password}
-                  onChange={handleChange}
+                  value={password} 
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
                   required
                 />
