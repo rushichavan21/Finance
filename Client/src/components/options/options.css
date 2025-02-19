@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding: 10px 5px;
   border-bottom: 1px solid rgb(0, 0, 0);
-  background-color: #208d5729;
+  background-color: #203d27;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -25,8 +25,8 @@
   border: 1px solid rgba(0, 0, 0, 0.826);
   border-radius: 0.5rem;
   padding: 5px 5px;
-  background-color: #208d577d;
-  color: white;
+  background-color: #3f6204;
+  color: rgba(239, 226, 202, 0.896);
   cursor: pointer;
   flex: 1;
   min-width: 0;
@@ -37,13 +37,13 @@
 
 /* Hover effect */
 .options-button:hover {
-  background-color: rgb(78, 222, 78);
+  background-color:#90be6d;
   border: 2px solid rgba(255, 255, 255, 0.888);
   color: black;
 }
 
 .options-button.active {
-  background-color: rgba(78, 222, 78, 0.734);
+  background-color: #90be6d;
   border: 2px solid rgba(255, 255, 255, 0.888);
   color: black;
 }

@@ -4,12 +4,21 @@
     flex-direction: column;
     border: 2px solid rgba(128, 128, 128, 0.604);
     border-radius: 1rem;
+    background-image: url(./screen-bg-2.svg);
+    background-color: rgba(0, 0, 0, 0.858);
+    background-blend-mode: soft-light; 
+    
 }
 .quote-quote{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.332);
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius:10px;
+    font-size: 1.25rem;
 }
 .quote-author{
     padding: 2px;
+    background-color: rgba(0, 0, 0, 0.332);
     border: 1px solid grey;
     border-radius:10px;
     width: 30%;

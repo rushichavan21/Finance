@@ -5,7 +5,9 @@
     margin-top: 1.5rem;
     padding: 10px;
     border: 2px solid rgba(128, 128, 128, 0.552);
-    background-color: rgba(48, 35, 35, 0.567);
+    color: rgba(239, 226, 202, 0.896);
+    background-color: rgba(48, 35, 35, 0.567); 
+    font-size: 1.25rem;
 }
 .newsCard-title{
     text-align: start;

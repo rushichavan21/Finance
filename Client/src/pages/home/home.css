@@ -16,8 +16,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-
-    z-index: 0;
+    background: inherit; 
+    filter: blur(5px); 
+    z-index: 1; 
 }
 
 
@@ -58,26 +59,7 @@
     display: flex;
     height:50%;
     box-sizing: border-box;
-}
-.home-nifty-insights{
-    border: 1px solid green;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    text-align: center;
-}
-.home-sensex-insights{
-    border: 1px solid blue;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    text-align: center;
-}   
-
+}  
 .currency-commodity-section{
     width: 100%;
     height: 100%;
@@ -87,13 +69,11 @@
 }
 .rupee-vs-dollor-div{
     width: 50%;    
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     box-sizing: border-box;
-    padding: 15px;
-    /* background-color: black; */
+ padding: 1rem;
 }
 .compartment-home{
     display: flex;
@@ -110,17 +90,19 @@
     justify-content: center;
     box-sizing: border-box;
     text-align: center;
-    
+    padding: 1rem;
 }
 .currency-title{
     text-align: center;
-     color: white;
-    height: 100%;
-    background-color: black;
-    width: 30%;
-    border: 1px solid gray;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    color: rgba(239, 226, 202, 0.896);
+    background-color: rgba(48, 35, 35, 0.567); 
+   width: 40%;
+   border: 1px solid gray;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   padding: 2px;
+   font-size: 1.25rem;
+   font-weight: 500;
 }
 .quote-section{
     margin: 1rem;
