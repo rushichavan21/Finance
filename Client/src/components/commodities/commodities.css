@@ -1,18 +1,19 @@
 .commodities-container{
     width: 100%;
     height: 100%;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
 }
 .commodities-title{
     text-align: center;
-    color: white;
-   background-color: black;
-   width: 80%;
+    color: rgba(239, 226, 202, 0.896);
+    background-color: rgba(48, 35, 35, 0.567); 
+   width: 90%;
    border: 1px solid gray;
    border-radius: 10px;
    margin-bottom: 10px;
    padding: 2px;
-   margin-top: 1.75rem;
+   font-size: 1.25rem;
+   font-weight: 500;
  
 }
 .metals-section {
@@ -21,14 +22,15 @@ flex-direction: column;
 /* justify-content: space-between; */
 }
 .metal-item {
-    padding: 10px;
+    padding: 8px;
     border: 2px solid rgba(128, 128, 128, 0.468);
     text-align: center;
    border-radius: 1rem;
    margin: 1rem;
-   width: 60%;
+   width: 100%;
    display: flex;
    background-color: rgba(48, 35, 35, 0.567);
+   font-size: 1.25rem;
 }
 
 .metal-price{
@@ -36,7 +38,8 @@ margin-left: 1rem;
  width: 50%;
  height: 100%;
  border-left: 2px solid greenyellow;
- background-color: black;
+ background-color: rgba(0, 0, 0, 0.337);
+ padding-right: 10px;
 }
 .compartment-hori{
     display: flex;

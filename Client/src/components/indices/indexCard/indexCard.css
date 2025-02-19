@@ -1,15 +1,18 @@
 .indexCard-wrapper{
     height: 50%;
-    background-color: rgba(35, 25, 25, 0.567);
+    color: rgba(239, 226, 202, 0.896);
+    background-color: rgba(48, 35, 35, 0.567); 
     border: 1px solid rgba(128, 128, 128, 0.627);
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
     margin-top: 20px;
     border-radius: 10px;
+    font-size: 1.25rem;
 }
 .index-name{
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .index-change{
@@ -19,14 +22,24 @@
   justify-content: center;
 
 } 
-
+.index-name{
+    padding-left: 1rem;
+    font-size: 1.25rem;
+}
  .index-details{
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.507);
-    border-radius: 10px;
+    height: 50%;
+    /* border: 1px solid rgba(255, 255, 255, 0.589); */
+    border-left: 1px solid greenyellow;
+    overflow: hidden;
+    /* border-radius: 10px; */
     padding: 15px;
+    margin-right: 1rem;
+    padding-right: 20px;
+    padding-left: 5px;
  }
  .index-details div {
     margin-left: 1rem;

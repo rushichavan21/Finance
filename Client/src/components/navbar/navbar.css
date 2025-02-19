@@ -1,7 +1,8 @@
 .navbar-container{
 padding: 5px;
 height: 2.8rem;
-background-color: rgba(14, 183, 104, 0.436);
+/* background-color: rgba(14, 183, 104, 0.436); */
+background-color: #203d27;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -9,7 +10,7 @@ font-size: 2rem;
 max-width:100%;
 }
 .navbar-title{
-    color: white;
+    color: rgb(179, 255, 66);
 }
 .navbar-options{
     display: flex;

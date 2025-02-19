@@ -5,9 +5,11 @@
     justify-content: center;
     box-sizing: border-box;
     padding: 5px;
-    background-color: black;
+    color: rgba(239, 226, 202, 0.896);
+    background-color: rgba(48, 35, 35, 0.567); 
     text-align: center;
     border: 2px solid rgba(255, 255, 255, 0.345);
+    font-size: 1rem
     border-radius: 1rem;
 }
 .day-date span{

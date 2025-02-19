@@ -22,18 +22,19 @@
 /* border: 1px solid gray; */
 padding:3px;
 font-weight: 500;
+font-size: 1.25rem;
 border-radius: 10px;
     position: absolute;
     right: 0px;
     top: 0%;
-    width: 100px;
-    margin-top: 2rem; 
+    width: 120px;
+    margin-top: 1rem; 
 }
 
 .aboutus-btn {
     position: absolute;
-    right: 10px;
-    top: 60%;
+    right: 20px;
+    top: 65%;
     transform: translateY(-10%);
     padding: 10px 15px;
     background-color: #4CAF50; 
