@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './indices.css';
 import IndexCard from './indexCard/IndexCard';
-
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 const IndicesData = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ const IndicesData = () => {
   return (
     <div className="indicesData-wrapper">
       <div className="indice-left">
+      {loading && <SkeletonTheme  baseColor="#202020" highlightColor="#444"><Skeleton count={7}/></SkeletonTheme>}
         {data.length > 0 && (
           <IndexCard
             name={data[0].name}
@@ -54,6 +56,7 @@ const IndicesData = () => {
         )}
       </div>
       <div className="indice-right">
+      {loading && <SkeletonTheme  baseColor="#202020" highlightColor="#444"><Skeleton count={7}/></SkeletonTheme>}
         {data.length > 2 && (
           <IndexCard
             name={data[2].name}

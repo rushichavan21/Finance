@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";  
-import { Loader } from 'rsuite';
+// import { Loader } from 'rsuite';
 import "./commodities.css";
-
+import Skeleton ,  { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 const Commodities = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -26,9 +27,9 @@ const Commodities = () => {
 
     return (
         <div className="commodities-container">
-            {loading && <Loader />} 
             
             <div className="commodities-title">Commodities Insight</div>
+            {loading && <SkeletonTheme baseColor="#202020" highlightColor="#444" > <Skeleton count={10}/></SkeletonTheme>} 
 
             {!loading && data && Object.keys(data).length > 0 && (
                 <div className="metals-section">
