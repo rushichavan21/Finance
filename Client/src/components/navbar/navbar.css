@@ -66,5 +66,6 @@ cursor: pointer;
    }
    .navbar-user h1{
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 350;
+    font-family: monospace;
    }
