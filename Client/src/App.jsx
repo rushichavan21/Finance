@@ -8,6 +8,7 @@ import Signup from './pages/signup/signup'
 import Footer from './components/footer/Footer'
 import RoadmapLanding from './components/roadmap/RoadmapLanding'
 import Calculator from './components/calculator/Calculator'
+import Portfolio from './pages/portfolio/Portfolio'
 const App = () => {
   const location = useLocation();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
@@ -25,7 +26,7 @@ const App = () => {
           <Route path='/' element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/watchlist' element={<InProcess/>}/>
-          <Route path='/portfolio' element={<InProcess/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/news' element={<InProcess/>}/>
           <Route path='/tracker' element={<InProcess/>}/>
           <Route path='/crypto' element={<InProcess/>}/>
