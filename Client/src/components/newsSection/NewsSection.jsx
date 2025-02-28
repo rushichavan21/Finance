@@ -8,6 +8,16 @@ const NewsSection = () => {
   const [loading, setLoading] = useState(true);
   const [time, setTime] = useState(60);
   const scrollRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const fetchNews = () => {
     setLoading(true);
@@ -26,9 +36,7 @@ const NewsSection = () => {
 
   useEffect(() => {
     fetchNews();
-
     const newsInterval = setInterval(fetchNews, 60000);
-
     const countdown = setInterval(() => {
       setTime((prev) => (prev > 0 ? prev - 1 : 60));
     }, 1000);
@@ -39,16 +47,22 @@ const NewsSection = () => {
     };
   }, []);
 
-  // Auto-scroll effect
   useEffect(() => {
+    if (!scrollRef.current) return;
+    
     const scroll = () => {
       if (scrollRef.current) {
-        scrollRef.current.scrollBy({ top: 1, behavior: "smooth" });
+        if (isMobile) {
+          scrollRef.current.scrollBy({ left: 1, behavior: "smooth" });
+        } else {
+          scrollRef.current.scrollBy({ top: 1, behavior: "smooth" });
+        }
       }
     };
+    
     const interval = setInterval(scroll, 50);
     return () => clearInterval(interval);
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="newsSection-container">
