@@ -129,7 +129,39 @@
 }
 
 
-@media screen and (max-width: 768px) {
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+   .quote-section{
+    margin: 0;
+   }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+    .home-aboutus{
+        display: none;
+    }
     .home-container {
         overflow-y: auto;
         height: auto;
@@ -146,7 +178,7 @@
         width: 100%;
         height: auto;
         min-height: 250px;
-        max-height: 300px;
+        max-height: 325px;
         padding: 10px 5px;
         margin: 15px 0;
     }
@@ -170,6 +202,9 @@
     
     .rupee-vs-dollor-div {
         width: 100%;
+        margin: 0%;
+        padding: 10px;
+        margin-top: 5rem;
     }
     
     .compartment-home {
@@ -188,9 +223,36 @@
     .rupee-vs-dollor-div {
         padding: 0.75rem;
     }
-}
-
-@media screen and (max-width: 475px) {
+    .commodity-section{
+     /* background-color: aqua; */
+     margin-left: 25%;
+    }
+    .commodities-title{
+        width: 100%;
+    }
+    .metal-item{
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .quote-section{
+        margin-bottom: 1rem;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
     .compartment-hori {
         flex-direction: column;
     }
@@ -204,4 +266,13 @@
         width: 80%;
         font-size: 1rem;
     }
-}
+    .commodity-section{
+      margin: 0px;
+      padding: 2rem;
+      padding-top:0;
+      /* margin-right: 1rem; */
+    }
+    .commodities-title{
+        font-size: 1rem;
+    }
+  }
