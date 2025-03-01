@@ -33,17 +33,42 @@
 }
 
 
-@media screen and (max-width: 768px) {
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
     .newsCard-wrapper {
         width: 280px;
         margin-top: 0;
         margin-right: 15px;
         flex-shrink: 0;
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         font-size: 1rem;
+        flex-grow: 1;
     }
     
     .newsCard-title {
@@ -66,22 +91,61 @@
         padding: 4px;
         margin-top: 5px;
         flex-direction: column;
-        align-items: flex-start;
     }
     
     .newsCard-source, .newsCard-date {
         padding: 2px;
     }
-}
+    
+    .newsSection-container {
+        width: 100%;      
+        padding: 10px 5px;
+        margin-bottom: 1rem;
+    }
+    
+    .newsData {
+      flex-direction: row;
+      overflow-x: auto;
+      overflow-y: hidden;
+      align-items: stretch;
+      width: 100%;
+      padding: 10px 0;
+      min-height: 300px; /* Change height to min-height */
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 5%,
+            black 95%,
+            transparent
+        );
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 5%,
+            black 95%,
+            transparent
+        );
+    }
 
+  }
+  
 
-@media screen and (max-width: 475px) {
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
     .newsCard-wrapper {
         width: 230px;
+        font-size: 0.9rem;
+        height: 280px;
+      
     }
     
     .newsCard-title {
         font-size: 1rem;
         padding: 6px;
     }
-}
+  
+  }
