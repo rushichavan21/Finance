@@ -37,14 +37,14 @@ const Navbar = () => {
           <div className="navbar-title">Finance</div>
         </div>
 
+
+        <div className="navbar-options">
         {isAuthenticated && (
           <div className="navbar-user">
             {/* <img src={user.picture} alt="Profile" className="navbar_user_pic" /> */}
             <h1>{user.name}</h1>
           </div>
         )}
-
-        <div className="navbar-options">
           {isAuthenticated ? (
             <button className="round-buttons" onClick={() => logout()}>
               <LogOut size={20} /> Logout
