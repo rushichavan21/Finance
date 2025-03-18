@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer'
 import RoadmapLanding from './components/roadmap/RoadmapLanding'
 import Calculator from './components/calculator/Calculator'
 import Portfolio from './pages/portfolio/Portfolio'
+import AskAi from './pages/askAi/AskAi'
 const App = () => {
   const location = useLocation();
   const isAuthPage = ['/login', '/signup'].includes(location.pathname);
@@ -29,7 +30,7 @@ const App = () => {
           <Route path='/portfolio' element={<Portfolio/>}/>
           <Route path='/news' element={<InProcess/>}/>
           <Route path='/tracker' element={<InProcess/>}/>
-          <Route path='/crypto' element={<InProcess/>}/>
+          <Route path='/ask-ai' element={<AskAi/>}/>
           <Route path='/roadmap' element={<RoadmapLanding/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
